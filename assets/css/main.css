@@ -118,7 +118,7 @@ input, select, textarea {
 
 	body {
 		background-color: #d5dbd5;
-		color: rgba(255, 255, 255, 0.65);
+		color: #008000;
 	}
 
 	body, input, select, textarea {
@@ -312,7 +312,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #008000;
 	}
 
 	blockquote {
@@ -2358,6 +2358,16 @@ input, select, textarea {
 		}
 
 /* Image */
+	@media screen and (min-width: 1000px) {
+		.image.centered {
+			display: block;
+			margin: auto;
+		}
+	}
+
+	
+
+
 
 	.image {
 		border-radius: 8px;
@@ -2393,8 +2403,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			margin: 0 auto 2em auto;
+			width: 50%;
 		}
 
 			.image.fit img {
@@ -2403,7 +2413,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 auto 3em auto;
 			width: 100%;
 		}
 
@@ -2967,7 +2977,7 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
+.spotlight {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3072,6 +3082,10 @@ input, select, textarea {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
 	}
+	#header h10{
+		color: #072b17fb;
+	}
+
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
@@ -3349,6 +3363,9 @@ input, select, textarea {
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+			color: #636363;
+		}
+		#main h10{
 			color: #636363;
 		}
 
