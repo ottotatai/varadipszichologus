@@ -2404,7 +2404,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 auto 2em auto;
-			width: 50%;
+			width: 35%;
 		}
 
 			.image.fit img {
@@ -3345,7 +3345,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #F6E4C1;
+		background-color: #f2eec4;
 		color: #008000; /* Changed to blue */
 		border-radius: 0.25em;
 	}
