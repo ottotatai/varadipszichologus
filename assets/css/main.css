@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 		p.content {
@@ -204,7 +204,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.5em;
-		line-height: 1.2;
+		line-height: 0.8;
 	}
 
 	h2 {
@@ -2403,8 +2403,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 auto 1em auto;
-			width: 32%;
+			margin: 0 auto 0.5em auto;
+			width: 30%;
 		}
 
 			.image.fit img {
@@ -3142,7 +3142,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 3em 4em 3em 4em ;
 				}
 
 		}
