@@ -7,6 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.workshop-section {
@@ -19,8 +20,7 @@
 			}
 			
 			.workshop-section:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 			}
 			
 			.workshop-section h2 {
@@ -33,6 +33,40 @@
 			.workshop-separator {
 				display: none;
 			}
+			
+			/* Image oval styling and frame */
+			.oval-image-container {
+				text-align: center;
+				margin: 20px auto 30px;
+				position: relative;
+				max-width: 250px;
+			}
+			
+			.oval-image {
+				width: 100%;
+				height: auto;
+				border-radius: 50% / 40%;  /* Creates oval shape - adjust as needed */
+				object-fit: cover;
+				display: block;
+				border: 10px solid transparent;
+				box-sizing: border-box;
+				position: relative;
+				z-index: 1;
+			}
+			
+			.image-frame {
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				right: -20px;
+				bottom: -20px;
+				border: 4px solid #d4bb92;  /* Gold-ish frame color */
+				border-radius: 50% / 40%;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 
+						   inset 0 0 8px rgba(0, 0, 0, 0.1);
+				z-index: 0;
+				background: linear-gradient(135deg, rgba(212, 187, 146, 0.2), rgba(212, 187, 146, 0.1));
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -43,69 +77,97 @@
 				<!-- Cím -->
 					<header id="header">
 						<h1>Workshopok, tanfolyamok</h1>
-						<p>Alcím ha ide még írnál valamit (a képet csak random raktam be)</p>
+						<p></p>
 					</header>
+
+				<!-- Idézet -->
+				<div class="quote-container" style="text-align: center; margin: 20px auto 40px; max-width: 800px; font-style: italic; color: #333;">
+					<p>„A meditáció a létezés egy módja, nem egy technika. A meditációnak nem célja, hogy bárhová eljussunk. Inkább megengedjük magunknak,<br>
+					Hogy pontosan ott legyünk, Ahol éppen vagyunk, És azok legyünk, akik vagyunk,<br>
+					És hogy a világ is olyan legyen, Amilyen, Ebben a pillanatban".</p>
+					<p style="margin-top: 10px; font-size: 0.9em; color: #333;">- Jon Kabat-Zinn: Coming To Our Senses</p>
+				</div>
+
+				<div class="oval-image-container">
+					<div class="image-frame"></div>
+					<img src="images/workshop_starting_image.jpg" alt="" class="oval-image">
+				</div>
 
 				<!-- Main -->
 					<div id="main">
+						
+						
 
-						<!-- Workshop1 -->
-						<section id="workshop1" class="main workshop-section">
-							<span class="image main"><img src="images/workshop_kezdo.png" alt="" /></span>
+						
 
-							<!-- Workshop1 címe -->
+
+
+						<!-- Workshop3 - MBSR Tanfolyam -->
+
+						<section id="workshop3" class="main workshop-section">
+							
+
 							<h2>
-								<b>Tudatos Jelenlét alapú Stresszcsökkentés Workshop </b></br>
+								<b>Mindfulness alapú stresszcsökkentő tanfolyam Online - 8 hetes MBSR</b></br>
 								<b>ONLINE ZOOM-ON </b></br>
-								<b>2025. október 18., szombat 9:00–15:00 között </b>
+								<b>A tanfolyam 2025. szeptember 29-én kezdődik, hétfőnként 19:00-21:00 között, 8 héten keresztül.</b>
 							</h2>
 
 							<hr />
 
-							<!-- Workshop1 mondanivaló -->
-							<p>A workshop során a résztvevők megismerkedhetnek a tudatos jelenlét alapú technikákkal, amelyek segítenek a stressz csökkentésében és a tudatos életmód kialakításában.</p>
-							<p>A workshop során a résztvevők:</p>
-							<ul>
-								<li><span style="font-weight: normal;">Tudatos evést</span> és <span style="font-weight: normal;">testfelderítést</span> gyakorolhatnak.</li>
-								<li><span style="font-weight: normal;">Fókuszált ülőmeditációval</span> mélyíthetik a tudatosságukat.</li>
-								<li>Megismerhetik a meditáció előtti <span style="font-weight: normal;">négy elem bemelegítő gyakorlatot</span>.</li>
-								<li>Tanulhatnak a <span style="font-weight: normal;">kellemes és kellemetlen élmények szerepéről</span>, valamint azok kezeléséről.</li>
-								<li>Fejleszthetik a <span style="font-weight: normal;">nehéz kommunikációban való részvételt</span>, és megismerkedhetnek különböző <span style="font-weight: normal;">kommunikációs stílusokkal</span>.</li>
-							</ul>
+							<!-- Workshop3 mondanivaló -->
+							<p>Az MBSR (Mindfulness-Based Stress Reduction) programot Jon Kabat-Zinn dolgozta ki, amely ötvözi a keleti, buddhista alapú meditációs módszereket és a nyugati tudományos megközelítést a stressz kezelésében. A program világnézetileg semleges, és célja a tudatos jelenlét fejlesztése a mindennapi életben.</p>
+
+							<p>A 8 hetes tréning során a résztvevők nemcsak elméleti, hanem gyakorlati szinten is megismerkednek a mindfulness technikáival, és megtapasztalják, hogyan lehet tudatosan jelen lenni a mindennapi helyzetekben.</p>
+
+							<p>A program fő célja, hogy segítsen csökkenteni a stresszt, miközben tudatosan figyeljük meg életünk stresszes pillanatait, ezáltal választási lehetőséget teremtve számunkra. A tanult módszerekkel képesek leszünk megtörni a káros szokásainkat, kiléphetünk az automatikus, "robotpilóta" üzemmódból, és teljes figyelemmel élhetjük meg az élet eseményeit. A tréning során elsajátítjuk, hogyan irányíthatjuk figyelmünket a jelen pillanatra, és a koncentrált figyelem révén mélyebb kapcsolatot alakíthatunk ki mindennapi tevékenységeinkkel.</p>
 
 							<hr />
 
-							<!-- Workshop1 árak -->
-							<h2><b>Workshop ára</b>: 22 500 Ft / fő</h2>
-							<p>A workshopon való részvétel minimum 4 fő, maximum 8 fő részvételével lehetséges.</p>
-							<p>A résztvevők a workshop végén:</p>
+							<!-- Workshop3 árak -->
+							<h2><b>Tanfolyam ára</b>: 50 000 Ft / fő</h2>
+							<p>A tanfolyamon való részvétel minimum 4 fő és maximum 8 fő részvételével lehetséges.</p>
+							<p>A résztvevők a tanfolyam ideje alatt:</p>
 							<ul>
 								<li>Hanganyagot</li>
-								<li>Összefoglalót a napról</li>
-								<li>Akcióterv naplót kapnak.</li>
+								<li>Összefoglalót az órákról</li>
+								<li>Akcióterv naplókat kapnak</li>
 							</ul>
+
+							<p>Ajánlom a workshopokat és a 8 hetes tanfolyamot mindazoknak, akik szeretnék csökkenteni stressz-szintjüket, megismerkedni a mindfulness módszerével, hétköznapban kezelni a stresszt életükben, valamint felfedezni a különböző meditációs attitűdöket.</p>
+
+							<p>Nem ajánlom a workshopokat és a 8 hetes tanfolyamot azoknak, akik súlyos pszichiátriai problémákkal küzdenek, például depresszióval, addikcióval, pszichózissal vagy gyógyszeres kezelés alatt állnak.</p>
+
+							<p>A 8 hetes tanfolyam zárt csoportos jellegű, és csak az első órától lehet csatlakozni. A jelentkezéshez szükséges a jelentkezési lap kitöltése és a díj befizetése. Csak így válik biztosítva a helyed a csoportban. A tanfolyam előtt egy online ZOOM felületen tartott orientációs beszélgetés is előzi meg a programot.</p>
+
+							<p>Onkológiai betegségben szenvedők orvosi javaslat alapján ingyenesen vehetnek részt a workshopokon és a tanfolyamokon.</p>
+
 							<p><span style="font-weight: normal;">Jelentkezés:</span></p>
 							A jelentkezés a Google Forms kitöltésével és az összeg befizetésével válik érvényessé: </br>
 							Utalás adatai:
 							<p>Váradi Gábor</br>
 								12042847-02004219-00100001</br>
 								Raiffeisen Bank </br>
-								Közleményben: Teljes név, workshop/tanfolyam kezdő dátuma</p>
+								Közleményben: Teljes név, tanfolyam kezdő dátuma</p>
 							</p>
 							<div class="content">
 								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwSFXWshvyfKhX5bvSC46RBaJt4uFNTK9S3sfQSvPe7kymRQ/viewform?embedded=true" 
-								 style="width: 100%; height: 600px; border: none;"
-									 frameborder="0" 
-									 marginwidth="0" 
-									 marginheight="0"
-									 scrolling="auto">
-									Betöltés…
-								</iframe>
+								style="width: 100%; height: 600px; border: none;"
+									frameborder="0" 
+									marginwidth="0" 
+									marginheight="0"
+									scrolling="auto">
+								Betöltés…
+							</iframe>
 							</div>
 
 							<p>Bővebb információk:</br>
 								📧 <span style="font-weight: normal;">varadi.pszichologus@gmail.com</span></p>
 						</section>
+
+
+
+
 
 						<!-- Workshop2 -->
 						<section id="workshop2" class="main workshop-section">
@@ -164,65 +226,70 @@
 						
 						</section>
 
-						<!-- Workshop3 - Tanfolyam -->
-						<section id="workshop3" class="main workshop-section">
+
+
+
+
+						<!-- Workshop1 -->
+						
+						<section id="workshop1" class="main workshop-section">
+							<!-- Workshop1 címe -->
 							<h2>
-								<b>Mindfulness alapú stresszcsökkentő tanfolyam Online - 8 hetes MBSR</b></br>
+								<b>Tudatos Jelenlét alapú Stresszcsökkentés Workshop </b></br>
 								<b>ONLINE ZOOM-ON </b></br>
-								<b>A tanfolyam 2025. szeptember 29-én kezdődik, hétfőnként 19:00-21:00 között, 8 héten keresztül.</b>
+								<b>2025. október 18., szombat 9:00–15:00 között </b>
 							</h2>
 
 							<hr />
 
-							<!-- Workshop3 mondanivaló -->
-							<p>Az MBSR (Mindfulness-Based Stress Reduction) programot Jon Kabat-Zinn dolgozta ki, amely ötvözi a keleti, buddhista alapú meditációs módszereket és a nyugati tudományos megközelítést a stressz kezelésében. A program világnézetileg semleges, és célja a tudatos jelenlét fejlesztése a mindennapi életben.</p>
-
-							<p>A 8 hetes tréning során a résztvevők nemcsak elméleti, hanem gyakorlati szinten is megismerkednek a mindfulness technikáival, és megtapasztalják, hogyan lehet tudatosan jelen lenni a mindennapi helyzetekben.</p>
-
-							<p>A program fő célja, hogy segítsen csökkenteni a stresszt, miközben tudatosan figyeljük meg életünk stresszes pillanatait, ezáltal választási lehetőséget teremtve számunkra. A tanult módszerekkel képesek leszünk megtörni a káros szokásainkat, kiléphetünk az automatikus, "robotpilóta" üzemmódból, és teljes figyelemmel élhetjük meg az élet eseményeit. A tréning során elsajátítjuk, hogyan irányíthatjuk figyelmünket a jelen pillanatra, és a koncentrált figyelem révén mélyebb kapcsolatot alakíthatunk ki mindennapi tevékenységeinkkel.</p>
+							<!-- Workshop1 mondanivaló -->
+							<p>A workshop során a résztvevők megismerkedhetnek a tudatos jelenlét alapú technikákkal, amelyek segítenek a stressz csökkentésében és a tudatos életmód kialakításában.</p>
+							<p>A workshop során a résztvevők:</p>
+							<ul>
+								<li><span style="font-weight: normal;">Tudatos evést</span> és <span style="font-weight: normal;">testfelderítést</span> gyakorolhatnak.</li>
+								<li><span style="font-weight: normal;">Fókuszált ülőmeditációval</span> mélyíthetik a tudatosságukat.</li>
+								<li>Megismerhetik a meditáció előtti <span style="font-weight: normal;">négy elem bemelegítő gyakorlatot</span>.</li>
+								<li>Tanulhatnak a <span style="font-weight: normal;">kellemes és kellemetlen élmények szerepéről</span>, valamint azok kezeléséről.</li>
+								<li>Fejleszthetik a <span style="font-weight: normal;">nehéz kommunikációban való részvételt</span>, és megismerkedhetnek különböző <span style="font-weight: normal;">kommunikációs stílusokkal</span>.</li>
+							</ul>
 
 							<hr />
 
-							<!-- Workshop3 árak -->
-							<h2><b>Tanfolyam ára</b>: 50 000 Ft / fő</h2>
-							<p>A tanfolyamon való részvétel minimum 4 fő és maximum 8 fő részvételével lehetséges.</p>
-							<p>A résztvevők a tanfolyam ideje alatt:</p>
+							<!-- Workshop1 árak -->
+							<h2><b>Workshop ára</b>: 22 500 Ft / fő</h2>
+							<p>A workshopon való részvétel minimum 4 fő, maximum 8 fő részvételével lehetséges.</p>
+							<p>A résztvevők a workshop végén:</p>
 							<ul>
 								<li>Hanganyagot</li>
-								<li>Összefoglalót az órákról</li>
-								<li>Akcióterv naplókat kapnak</li>
+								<li>Összefoglalót a napról</li>
+								<li>Akcióterv naplót kapnak.</li>
 							</ul>
-
-							<p>Ajánlom a workshopokat és a 8 hetes tanfolyamot mindazoknak, akik szeretnék csökkenteni stressz-szintjüket, megismerkedni a mindfulness módszerével, hétköznapban kezelni a stresszt életükben, valamint felfedezni a különböző meditációs attitűdöket.</p>
-
-							<p>Nem ajánlom a workshopokat és a 8 hetes tanfolyamot azoknak, akik súlyos pszichiátriai problémákkal küzdenek, például depresszióval, addikcióval, pszichózissal vagy gyógyszeres kezelés alatt állnak.</p>
-
-							<p>A 8 hetes tanfolyam zárt csoportos jellegű, és csak az első órától lehet csatlakozni. A jelentkezéshez szükséges a jelentkezési lap kitöltése és a díj befizetése. Csak így válik biztosítva a helyed a csoportban. A tanfolyam előtt egy online ZOOM felületen tartott orientációs beszélgetés is előzi meg a programot.</p>
-
-							<p>Onkológiai betegségben szenvedők orvosi javaslat alapján ingyenesen vehetnek részt a workshopokon és a tanfolyamokon.</p>
-
 							<p><span style="font-weight: normal;">Jelentkezés:</span></p>
 							A jelentkezés a Google Forms kitöltésével és az összeg befizetésével válik érvényessé: </br>
 							Utalás adatai:
 							<p>Váradi Gábor</br>
 								12042847-02004219-00100001</br>
 								Raiffeisen Bank </br>
-								Közleményben: Teljes név, tanfolyam kezdő dátuma</p>
+								Közleményben: Teljes név, workshop/tanfolyam kezdő dátuma</p>
 							</p>
 							<div class="content">
 								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwSFXWshvyfKhX5bvSC46RBaJt4uFNTK9S3sfQSvPe7kymRQ/viewform?embedded=true" 
-								style="width: 100%; height: 600px; border: none;"
-									frameborder="0" 
-									marginwidth="0" 
-									marginheight="0"
-									scrolling="auto">
-								Betöltés…
-							</iframe>
+								 style="width: 100%; height: 600px; border: none;"
+									 frameborder="0" 
+									 marginwidth="0" 
+									 marginheight="0"
+									 scrolling="auto">
+									Betöltés…
+								</iframe>
 							</div>
 
 							<p>Bővebb információk:</br>
 								📧 <span style="font-weight: normal;">varadi.pszichologus@gmail.com</span></p>
 						</section>
+
+						
+
+						
 					</div>
 
 					<!-- Oldal vége -->
